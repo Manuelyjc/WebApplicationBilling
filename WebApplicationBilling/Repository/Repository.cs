@@ -30,7 +30,7 @@ namespace WebApplicationBilling.Repository
             {
                 var jsonstring = await responseMessage.Content.ReadAsStringAsync();
 
-                return JsonConvert.DeserializeObject<IEnumerable<T>>(jsonstring)
+                return JsonConvert.DeserializeObject<IEnumerable<T>>(jsonstring);
 
 
         }

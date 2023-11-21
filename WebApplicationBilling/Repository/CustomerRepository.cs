@@ -5,6 +5,10 @@ namespace WebApplicationBilling.Repository
 {
     public class CustomerRepository : Repository<CustomerDTO> , ICustomerRepository
     {
-        public ICustomerRepository() { }
+        public CustomerRepository(IHttpClientFactory httpClientFactory) 
+            : base(httpClientFactory)
+        {
+
+        }
     }
 }
